@@ -8,14 +8,14 @@ author: Fall 2017
 
 ### Announcements
 
-Please install the latest available version of JMP onto your computer as soon as you can.
-
+Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp courses on R by ***September 8***.
 ### Resources
 
   * [Base R](https://cran.r-project.org/)
   * [R Studio](https://www.rstudio.com/home/)
   * [ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)  
   * [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+  * [Data Camp group](https://www.datacamp.com/groups/ee78e61eb582fd3d464f961fc5f13070d06fcb29/invite)
 
 
 
@@ -25,38 +25,6 @@ Please install the latest available version of JMP onto your computer as soon as
 
 
 ### Homework
-
-### Data
-
-
--   [Birth weight
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/Birthweight.jmp)
--   [BRFSS
-    data](https://www.dropbox.com/s/lbqr85a1to664n9/BRFSS.jmp?dl=0)
--   [FEV
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/FEVdata.jmp)
--   [HIV
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/HIV-Antiretroviral.jmp)
--   [Iraq War
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/IraqWar.jmp)
--   [Lions
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/Lions.jmp)
--   [Lymphedenopathy
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/LymphNodes.jmp)
--   [Pancreatic cancer
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/Pancreatic_Cancer_Data.jmp)
--   [Pew research
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/PewFacebookData.jmp)
--   [Smiles
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/Smiles.jmp)
--   [Spring 2017 Student Survey
-    Data](https://github.com/silasbergen/CourseResources/raw/master/Data/StudentSurveyData.jmp)
--   [Subaru
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/subarus.jmp)
--   [Titanic
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/Titanic.jmp)
--   [Trombone
-    data](https://github.com/silasbergen/CourseResources/raw/master/Data/trombone.jmp)
 
 
 
