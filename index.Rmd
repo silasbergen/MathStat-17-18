@@ -1,6 +1,6 @@
 ---
-title: "Silas Bergen template site"
-author: Semester 
+title: "Stat 450-460: Mathematical statistics I-II"
+author: Fall 2017 
 ---
 
 
@@ -12,9 +12,10 @@ Please install the latest available version of JMP onto your computer as soon as
 
 ### Resources
 
-* [JMP installation instructions](https://silasbergen.github.io/JMP_installation.html)
-* [Tinkerplots installation instructions](https://silasbergen.github.io/Tinkerplots.pdf)
-* [Tutoring services](http://www.winona.edu/tutoring/)
+  * [Base R](https://cran.r-project.org/)
+  * [R Studio](https://www.rstudio.com/home/)
+  * [ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)  
+  * [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 
 
 
