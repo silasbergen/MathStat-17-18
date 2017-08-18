@@ -8,14 +8,15 @@ author: Fall 2017
 
 ### Announcements
 
-Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp courses on R by ***September 8***.
+Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp courses on R by ***September 8***.  The link below will register you for the group; you will have to create an account on Data Camp if you do not have one already.
+
 ### Resources
 
+  * [Data Camp group](https://www.datacamp.com/groups/ee78e61eb582fd3d464f961fc5f13070d06fcb29/invite)
   * [Base R](https://cran.r-project.org/)
   * [R Studio](https://www.rstudio.com/home/)
   * [ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)  
   * [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
-  * [Data Camp group](https://www.datacamp.com/groups/ee78e61eb582fd3d464f961fc5f13070d06fcb29/invite)
 
 
 
