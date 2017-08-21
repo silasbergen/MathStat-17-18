@@ -22,7 +22,7 @@ Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp cou
 
 ### Notes
 
- * Note set 1
+ * Chapter 3: Discrete random variables | [pdf](https://www.dropbox.com/s/dez6w5nqgepexs7/Chapter_3-Discrete.pdf?dl=0) | [Rmd](https://www.dropbox.com/s/2w69winr1hza613/Chapter%203-Discrete.Rmd?dl=0)
 
 
 ### Homework
