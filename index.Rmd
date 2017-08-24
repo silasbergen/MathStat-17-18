@@ -27,6 +27,7 @@ Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp cou
 
 ### Homework
 
+* [R Homework 1](R_HW1.html) 
 
 
 

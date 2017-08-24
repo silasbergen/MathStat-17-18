@@ -9,10 +9,10 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Fall 2017" />
+<meta name="author" content="Stat 450: Fall 2017" />
 
 
-<title>Stat 450-460: Mathematical statistics I-II</title>
+<title>R Homework 1</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -189,42 +189,59 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Stat 450-460: Mathematical statistics I-II</h1>
-<h4 class="author"><em>Fall 2017</em></h4>
+<h1 class="title toc-ignore">R Homework 1</h1>
+<h4 class="author"><em>Stat 450: Fall 2017</em></h4>
 
 </div>
 
 
-<div id="office-hours" class="section level3">
-<h3><a href="Schedule.html">Office hours</a></h3>
-</div>
-<div id="announcements" class="section level3">
-<h3>Announcements</h3>
-<p>Install R and R studio onto your laptops. Complete the 3 assigned Data Camp courses on R by <strong><em>September 8</em></strong>. The link below will register you for the group; you will have to create an account on Data Camp if you do not have one already.</p>
-</div>
-<div id="resources" class="section level3">
-<h3>Resources</h3>
-<ul>
-<li><a href="https://www.datacamp.com/groups/ee78e61eb582fd3d464f961fc5f13070d06fcb29/invite">Data Camp group</a></li>
-<li><a href="https://cran.r-project.org/">Base R</a></li>
-<li><a href="https://www.rstudio.com/home/">R Studio</a></li>
-<li><a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">ggplot2 cheat sheet</a><br />
-</li>
-<li><a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">R Markdown cheat sheet</a></li>
-</ul>
-</div>
-<div id="notes" class="section level3">
-<h3>Notes</h3>
-<ul>
-<li>Chapter 3: Discrete random variables | <a href="https://www.dropbox.com/s/dez6w5nqgepexs7/Chapter_3-Discrete.pdf?dl=0">pdf</a> | <a href="https://www.dropbox.com/s/2w69winr1hza613/Chapter%203-Discrete.Rmd?dl=0">Rmd</a></li>
-</ul>
-</div>
-<div id="homework" class="section level3">
-<h3>Homework</h3>
-<ul>
-<li><a href="R_HW1.html">R Homework 1</a></li>
-</ul>
-</div>
+<p><strong>Due Friday, 9/8 by 11:59pm. Prepare your submission with R Markdown. Submit fully-knitted html, Word, or pdf to D2L by due date. You are encouraged to use this .Rmd file as your starting point for your submission.</strong></p>
+<p>In class, we considered the case of rolling two dice, one red and one white. Let <span class="math inline">\(Y\equiv\)</span> the minimum of the two rolls.</p>
+<ol style="list-style-type: decimal">
+<li>Define the probability mass function (pmf) in tabular format. The table is started for you, below. Fill in the appropriate entries for <span class="math inline">\(p(y)\)</span>.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(y\)</span></th>
+<th><span class="math inline">\(p(y)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Graph this pmf.</p></li>
+<li><p>Find <span class="math inline">\(\mu \equiv E(Y)\)</span>.</p></li>
+<li><p>Find <span class="math inline">\(\sigma^2 \equiv Var(Y)\)</span>.</p></li>
+<li><p>Find <span class="math inline">\(M_Y(t)\)</span>, and create a plot of <span class="math inline">\(M_Y(t)\)</span> as a function of <span class="math inline">\(t\)</span> over the interval <span class="math inline">\([-1,1]\)</span>. (Hint: first, write a function <code>m(t)</code> that takes as argument <code>t</code> and returns <span class="math inline">\(M_Y(t)\)</span>, for any input <span class="math inline">\(t\)</span>. Then, create a sequence of <span class="math inline">\(t-\)</span>values over <span class="math inline">\([1,1]\)</span> with the <code>seq()</code> function, and use your function to evaluate <span class="math inline">\(M_Y(t)\)</span> for each value in the sequence. Then plot this sequence with <span class="math inline">\(t\)</span> on the x-axis and <span class="math inline">\(M_Y(t)\)</span> on the y-axis. The function <code>exp(t)</code> can be used to evaluate <span class="math inline">\(e^t\)</span>.)</p></li>
+<li><p>Now write an <code>R</code> function <code>one.Y()</code> that simulates a single realization of <span class="math inline">\(Y\)</span>. Using this function and <code>replicate()</code>, generate 1000 realizations of <span class="math inline">\(Y\)</span>. Graph the empirical pmf, and verify that is is similar to the theoretical one above.</p></li>
+<li><p>Find the empirical mean <span class="math inline">\(\bar Y\)</span> and variance <span class="math inline">\(S^2\)</span> (use <code>mean()</code> and <code>var()</code>). How do they compare to <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma^2\)</span>?</p></li>
+</ol>
 
 
 
