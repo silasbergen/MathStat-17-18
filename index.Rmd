@@ -24,6 +24,17 @@ Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp cou
 
  * Chapter 3: Discrete random variables | [pdf](https://www.dropbox.com/s/dez6w5nqgepexs7/Chapter_3-Discrete.pdf?dl=0) | [Rmd](https://www.dropbox.com/s/2w69winr1hza613/Chapter%203-Discrete.Rmd?dl=0)
 
+### Presentations
+
+Prepare the following problems to present in class on 8/30.  I will randomly assign who presents which problem on the day of class, so you should be prepared to present all of them!
+
+  - 3.21
+  - 3.33
+  - 3.85
+  - 3.145
+  - 3.187
+  
+
 
 ### Homework
 
