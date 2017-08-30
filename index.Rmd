@@ -38,7 +38,7 @@ Prepare the following problems to present in class on 9/6.  I will randomly assi
 
 ### Homework
 
-* [R Homework 1](R_HW1.html) | [.Rmd](R_HW1.Rmd)
+* [R Homework 1](R_HW1.html) | [.Rmd](https://www.dropbox.com/s/4zsa47cr0031429/R_HW1.Rmd?dl=0)
 
 
 
