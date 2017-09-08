@@ -37,7 +37,7 @@ This system is intended to use Nature to win Money.  The Fibonacci Sequence are 
 
 In this sequence, each number is the sum of the preceding two numbers.
 
-To use the Fibonacci System, you always bet on red.  Your first bet is the first non-zero number in the sequence, $\1.  If you lose, you bet the next number in the sequence, and continue moving along the sequence as long as you continue losing.  If you win, you revert to the previous number in the sequence for your next bet.
+To use the Fibonacci System, you always bet on red.  Your first bet is the first non-zero number in the sequence, \$1.  If you lose, you bet the next number in the sequence, and continue moving along the sequence as long as you continue losing.  If you win, you revert to the previous number in the sequence for your next bet.
 
 An example, with the bet number; bet amount; and bet outcome: 
 

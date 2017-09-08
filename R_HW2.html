@@ -253,7 +253,7 @@ $(document).ready(function () {
 <p>This system is intended to use Nature to win Money. The Fibonacci Sequence are the numbers:</p>
 <p>0, 1, 1, 2, 3, 5, 8, 13, 21, 34…</p>
 <p>In this sequence, each number is the sum of the preceding two numbers.</p>
-<p>To use the Fibonacci System, you always bet on red. Your first bet is the first non-zero number in the sequence, $. If you lose, you bet the next number in the sequence, and continue moving along the sequence as long as you continue losing. If you win, you revert to the previous number in the sequence for your next bet.</p>
+<p>To use the Fibonacci System, you always bet on red. Your first bet is the first non-zero number in the sequence, $1. If you lose, you bet the next number in the sequence, and continue moving along the sequence as long as you continue losing. If you win, you revert to the previous number in the sequence for your next bet.</p>
 <p>An example, with the bet number; bet amount; and bet outcome:</p>
 <ul>
 <li>Bet 1: $1; loss.</li>
@@ -415,11 +415,11 @@ $(document).ready(function () {
 <li>For which game is the expected playing time most variable?</li>
 </ul>
 <p>To get you started, here is the shell of a function for Game C. Similarly for Games D-E, you will need to set initial values of bet, money, and nplays. Set the <code>while()</code> loop condition–and update the values of <code>bet</code>, <code>money</code>, and <code>nplays</code>– according to the rules of each game.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gameC &lt;-<span class="st"> </span>function() {
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gameC &lt;-<span class="st"> </span><span class="cf">function</span>() {
   bet &lt;-<span class="st"> </span><span class="dv">1</span>
   money &lt;-<span class="st"> </span><span class="dv">0</span>
   nplays &lt;-<span class="st"> </span><span class="dv">0</span>
-  while(money &lt;<span class="st">  </span><span class="dv">10</span> &amp;<span class="st"> </span>bet &lt;=<span class="st"> </span><span class="dv">100</span>) {
+  <span class="cf">while</span>(money <span class="op">&lt;</span><span class="st">  </span><span class="dv">10</span> <span class="op">&amp;</span><span class="st"> </span>bet <span class="op">&lt;=</span><span class="st"> </span><span class="dv">100</span>) {
     <span class="co">#Spin the wheel, record outcome (win or loss)</span>
     <span class="co">#Update money depending on wheel outcome</span>
     <span class="co">#Update bet depending on wheel outcome</span>
@@ -452,7 +452,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
