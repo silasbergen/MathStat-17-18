@@ -1,0 +1,138 @@
+---
+title: "R Homework 2"
+author: "Stat 450: Fall 2017"
+output: html_document
+---
+
+**Due Wednesday, 9/20 by 11:59pm.  Prepare your submission with R Markdown.  Submit fully-knitted html, Word, or pdf to D2L by due date.  You are encouraged to use this .Rmd file as your starting point for your submission.**
+
+(Modified from *Introduction to Scientific Programming and Simulation Using R* by Owen Jones et al).  
+
+ A roulette wheel has 37 slots.  18 of these are colored red, 18 are black, and 1 slot (numbered 0) is colored green.  The red and black slots are numbered from 1 to 36.  There are four possible "games" or "systems" you can use when playing roulette.  Different games offer different playing experiences.  Some allow you to win more often than you lose, some let you play longer, some cost more to play, and some risk greater losses for a greater reward.  The games we will consider here are as follows.
+
+A. ***Betting on red***
+
+This game involves a single bet.  You always bet on red, and you always bet \$1.  If the ball lands on red you win \$1, otherwise you lose.
+
+B. ***Betting on a number***
+
+This game also involves a single bet.  You bet \$1 on a single number, say 17.  If the ball lands on that number you win \$35, otherwise you lose.
+
+
+
+C. ***Martingale system***
+
+In this game you start by betting \$1 on red.  If you lose, you double your previous bet; if you win, your next bet is \$1.  Regardless, you continue to bet on red.  The game continues until your net winnings equal \$10, or the bet exceeds \$100 (you only have a finite amount of wealth!).  
+
+
+D. ***Labouchere System***
+
+In this game you start with the list of numbers (1,2,3,4).  To begin, you bet the sum of the first and last numbers on red (initially, \$5).  If you win you delete the first and last numbers from the list (so if you win the list becomes (2,3)), otherwise you add the loss to the end of the list (so if you lose your first bet the list becomes (1,2,3,4,5)).  Repeat until your list is empty, or the bet exceeds \$100.  If only one number is left on the list, you bet that number.
+
+E. ***Fibonacci System***
+
+This system is intended to use Nature to win Money.  The Fibonacci Sequence are the numbers:
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34...
+
+In this sequence, each number is the sum of the preceding two numbers.
+
+To use the Fibonacci System, you always bet on red.  Your first bet is the first non-zero number in the sequence, $\1.  If you lose, you bet the next number in the sequence, and continue moving along the sequence as long as you continue losing.  If you win, you revert to the previous number in the sequence for your next bet.
+
+An example, with the bet number; bet amount; and bet outcome: 
+
+* Bet 1:  \$1; loss.
+* Bet 2: \$1; loss.
+* Bet 3: \$2; loss.
+* Bet 4: \$3; loss.
+* Bet 5: \$5; win.
+* Bet 6: \$3; loss.  
+...etc.
+
+
+
+You continue to play until your next bet is \$0; or your next bet would exceed \$100.
+
+Thus the following game would be complete:
+
+
+* Bet 1: \$1; loss.
+* Bet 2: \$1; win (move back to the "first" 1)
+* Bet 3: \$1; win
+
+Game over, since your next bet would be \$0.
+
+
+
+Games C-E are intended to cover previous losses by increasing bet size.
+
+The purpose of this problem is to compare the following qualities of the four games:
+
+1.  Expected winnings per game;
+2. Proportion of games you win (i.e., make money);
+3.  Expected playing time per game, measured by the number of bets made; 
+4. The maximum amount you can win;
+5. The maximum amount you can lose.
+
+###Part 1: Theoretical
+
+I. For the first four games, find the theoretical values of the maximum amount you could win in a single play of the game. (This amount is very difficult to determine for Game E).  Enter these in the table below.
+
+
+Game  |  (4) Max win  
+---  | -------
+A    |   |    
+B    |   |    
+C    |   |    
+D    |   |    
+
+
+
+II. For all games, find the theoretical values of the maximum amount you could lose in a single play of the game.  Enter these in the table below.
+
+
+Game  |   (5) Max loss
+---  | -------
+A    |       |
+B    |       | 
+C    |       |
+D    |       | 
+E    |       | 
+
+###Part 2: Simulation
+
+For each game write a function (with no arguments) that plays the game once and returns a vector of length 2 consisting of the amount won/lost and how many bets were made.  Using these functions and the `replicate()` function, simulate 100,000 "playings" of each game.  For Games C-E, you may want to consider the use of a `while()` loop.  Fill in the table below with your simulated results, verifying that columns 4 and 5 are similar to the theoretical (if they are not, something is wrong with your functions!)
+
+
+Game  |  (1) Expected winnings | (2) Proportion of games won | (3) Expected playing time | (4) Max win | (5) Max loss
+---  | ------------ | ------------ | ------------ | ------------| ------------
+A    |     |     |     |    |
+B    |     |     |     |    | 
+C    |     |     |     |    |
+D    |     |     |     |    | 
+E    |     |     |     |    | 
+
+Additionally, using `sd()` and the results of your 100,000 "playings" of each game, answer the following questions:
+
+* For which game is the amount won most variable?
+* For which game is the expected playing time most variable?  
+
+To get you started, here is the shell of a function for Game C.  Similarly for Games D-E, you will need to set initial values of bet, money, and nplays.  Set the `while()` loop condition--and update the values of `bet`, `money`, and `nplays`-- according to the rules of each game.  
+
+```{r}
+gameC <- function() {
+  bet <- 1
+  money <- 0
+  nplays <- 0
+  while(money <  10 & bet <= 100) {
+    #Spin the wheel, record outcome (win or loss)
+    #Update money depending on wheel outcome
+    #Update bet depending on wheel outcome
+    #Update nplays
+  }
+  return(c(money,nplays))
+}
+```
+
+
+

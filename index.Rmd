@@ -39,7 +39,7 @@ Prepare the following problems to present in class on 9/6.  I will randomly assi
 ### Homework
 
 * [R Homework 1](R_HW1.html) | [.Rmd](https://www.dropbox.com/s/4zsa47cr0031429/R_HW1.Rmd?dl=0)
-
+* [R Homework 2](R_HW2.html) | [.Rmd](https://www.dropbox.com/s/8angsdzqcetqbc6/R_HW2.Rmd?dl=0)
 
 
 
