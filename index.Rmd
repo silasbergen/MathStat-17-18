@@ -26,13 +26,13 @@ Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp cou
 
 ### Presentations
 
-Prepare the following problems to present in class on 9/6.  I will randomly assign who presents which problem on the day of class, so you should be prepared to present all of them!
+Prepare the following problems to present in class on Friday 9/22.  I will randomly assign who presents which problem on the day of class, so you should be prepared to present all of them!
 
-  - 3.21
-  - 3.33
-  - 3.145
-  - 3.147
-  - 3.187
+  - 3.100
+  - 3.101
+  - 3.138
+  - 3.140
+  - 3.152, 153, 154 (trio)
   
 
 
