@@ -7,8 +7,8 @@ author: Fall 2017
 ### [Office hours](Schedule.html)
 
 ### Announcements
+Chapter 3 problems are assigned; see below.
 
-Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp courses on R by ***September 8***.  The link below will register you for the group; you will have to create an account on Data Camp if you do not have one already.
 
 ### Resources
 
@@ -27,14 +27,6 @@ Install R and R studio onto your laptops.  Complete the 3 assigned Data Camp cou
 
 ### Presentations
 
-Prepare the following problems to present in class on Monday 9/18.  I will randomly assign who presents which problem on the day of class, so you should be prepared to present all of them!
-
-  - 3.100
-  - 3.101
-  - 3.138
-  - 3.140
-  - 3.152, 153, 154 (trio)
-  
 
 
 ### Homework
@@ -43,5 +35,20 @@ Prepare the following problems to present in class on Monday 9/18.  I will rando
 * [R Homework 2](R_HW2.html) | [.Rmd](https://www.dropbox.com/s/8angsdzqcetqbc6/R_HW2.Rmd?dl=0)
 
 
+The following problems from the textbook are due Friday, 9/29. Hand in solutions at beginning of class.  All of the following are from Chapter 3:
+
+* 6
+* 16, 19, 29
+* 55, 61
+* 71, 85, 86, 87
+* 108 (use `dhyper()` or similar function in `R` to solve)
+* 123
+* 158, 159
+* 202, 212, 213, 215
+
+Notes:
+
+* For 16, specify the pmf of $Y$.
+* 29 has a typo; the equation should read $E(Y) = \sum_{i=1}^\infty P(Y\geq i)$
 
 
