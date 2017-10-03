@@ -42,20 +42,11 @@ For Monday, 10/2, the following from Chapter 4 (each bullet represents one prese
 * [R Homework 2](R_HW2.html) | [.Rmd](https://www.dropbox.com/s/8angsdzqcetqbc6/R_HW2.Rmd?dl=0)
 
 
-The following problems from the textbook are due Friday, 9/29. Hand in solutions at beginning of class.  All of the following are from Chapter 3:
+The following problems from the textbook are due Friday, 10/13. Hand in solutions at beginning of class.  All of the following are from Chapter 4:
 
-* 6
-* 16, 19, 29
-* 55, 61
-* 71, 85, 86, 87
-* 108 (use `dhyper()` or similar function in `R` to solve)
-* 123
-* 158, 159
-* 202, 212, 213, 215
-
-Notes:
-
-* For 16, specify the pmf of $Y$.
-* 29 has a typo; the equation should read $E(Y) = \sum_{i=1}^\infty P(Y\geq i)$
-
-
+* 6, 12, 15
+* 23, 34, 35
+* 42
+* 80
+* 89, 96 (use R on part d.), 111, 112
+* 160, 165, 167, 173, 185, 188, 190, 197, 198, 200
