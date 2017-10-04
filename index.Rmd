@@ -24,6 +24,7 @@ In-class midterm will be Friday, 10/13.
 
  * Chapter 3: Discrete random variables | [pdf](https://www.dropbox.com/s/dez6w5nqgepexs7/Chapter_3-Discrete.pdf?dl=0) | [Rmd](https://www.dropbox.com/s/2w69winr1hza613/Chapter%203-Discrete.Rmd?dl=0)
  * Chapter 4: Continuous random variables | [pdf](https://www.dropbox.com/s/ao4gsywmreh47hz/Chapter4-continuous.pdf?dl=0) | [Rmd](https://www.dropbox.com/s/7rfb8ovsoplfqnr/Chapter4-continuous.Rmd?dl=0)
+ * Chapter 5: Joint distributions | [pdf](https://www.dropbox.com/s/49fvh6czirwj0kj/Chapter5-joint.pdf?dl=0) | [Rmd](https://www.dropbox.com/s/49fvh6czirwj0kj/Chapter5-joint.pdf?dl=0)
 
 
 ### Presentations
