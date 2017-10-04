@@ -7,8 +7,8 @@ author: Fall 2017
 ### [Office hours](Schedule.html)
 
 ### Announcements
-Chapter 3 problems are assigned; see below.
 
+In-class midterm will be Friday, 10/13.  
 
 ### Resources
 
@@ -44,7 +44,7 @@ For Monday, 10/2, the following from Chapter 4 (each bullet represents one prese
 
 The following problems from the textbook are due Friday, 10/13. Hand in solutions at beginning of class.  All of the following are from Chapter 4:
 
-* 6, 12, 15
+* 6, 15
 * 23, 34, 35
 * 42
 * 80
