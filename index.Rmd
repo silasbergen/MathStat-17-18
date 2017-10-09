@@ -8,7 +8,7 @@ author: Fall 2017
 
 ### Announcements
 
-In-class midterm will be Friday, 10/13.  
+In-class midterm will be Friday, 10/13.  Practice exam below.
 
 ### Resources
 
@@ -26,6 +26,9 @@ In-class midterm will be Friday, 10/13.
  * Chapter 4: Continuous random variables | [pdf](https://www.dropbox.com/s/ao4gsywmreh47hz/Chapter4-continuous.pdf?dl=0) | [Rmd](https://www.dropbox.com/s/7rfb8ovsoplfqnr/Chapter4-continuous.Rmd?dl=0)
  * Chapter 5: Joint distributions | [pdf](https://www.dropbox.com/s/49fvh6czirwj0kj/Chapter5-joint.pdf?dl=0) | [Rmd](https://www.dropbox.com/s/49fvh6czirwj0kj/Chapter5-joint.pdf?dl=0)
 
+### Exams
+
+* [Practice midterm #1](https://www.dropbox.com/s/sov203yn8i9p6yj/MathStatI-Midterm-Fall2016.docx?dl=0)
 
 ### Presentations
 
