@@ -8,7 +8,7 @@ author: Fall 2017
 
 ### Announcements
 
-In-class midterm will be Friday, 10/13.  Practice exam below.
+Take-home midterm is posted and due Wednesday, October 25 by 11:59 pm.
 
 ### Resources
 
@@ -28,7 +28,12 @@ In-class midterm will be Friday, 10/13.  Practice exam below.
 
 ### Exams
 
-* [Practice midterm #1](https://www.dropbox.com/s/sov203yn8i9p6yj/MathStatI-Midterm-Fall2016.docx?dl=0)
+This [writing rubric](https://www.dropbox.com/s/0n0vheg0ucg1tln/Writing%20Rubric-2018.docx?dl=0) will be applied to all take-home exams that require the use of R Markdown.  Of your entire midterm grade, 10% of your will come from your score on this rubric; 50% from your score on the take-home portion; and 40% from your score on the in-class portion.  
+
+
+
+* [Practice midterm](https://www.dropbox.com/s/sov203yn8i9p6yj/MathStatI-Midterm-Fall2016.docx?dl=0)
+* Take-home midterm (due 10/25) | [Word doc](https://www.dropbox.com/s/tcap7bhtf6tfhn7/Stat450-TakeHomeMidterm-Fall2017.docx?dl=0) | [Source file](https://www.dropbox.com/s/lmp8syvoo0xvnzc/Stat450-TakeHomeMidterm-Fall2017.Rmd?dl=0)
 
 ### Presentations
 
