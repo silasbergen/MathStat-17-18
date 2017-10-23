@@ -37,13 +37,19 @@ This [writing rubric](https://www.dropbox.com/s/0n0vheg0ucg1tln/Writing%20Rubric
 
 ### Presentations
 
-For Monday, 10/16, the following from Chapter 5 (each bullet represents one presentation's worth):
+For Friday, 10/27, the following from Chapter 5 (each bullet represents one presentation's worth):
 
+* 77, 92
+* 79, 93
+* 95, 114
+* 136, 141
+
+<!--
 * 7, 25, 51
 * 9, 27, 53
 * 11, 29, 55
 * 14, 32, 58
-
+-->
 
 ### Homework
 
