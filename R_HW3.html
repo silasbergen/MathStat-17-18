@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Stat 450: Fall 2017" />
+
+
+<title>R Homework 3</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="Syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="Schedule.html">Schedule</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://silasbergen.github.io/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">R Homework 3</h1>
+<h4 class="author"><em>Stat 450: Fall 2017</em></h4>
+
+</div>
+
+
+<p><strong>Due Wednesday, 11/8 by 11:59pm. Prepare your submission with R Markdown. Submit fully-knitted Word doc or pdf to D2L by due date. You are encouraged to use this .Rmd file as your starting point for your submission.</strong></p>
+<ol style="list-style-type: decimal">
+<li>In Math-Stat, all of the pmfs/pdfs we have discussed are truly <em>models</em>. This means they are proposed mathematical frameworks for explaining behavior of actual data. We consier one proposed model for some actual data in this problem. Suppose the type of breast cancer cells (malignant or benign) follow a Bernoulli distribution. Specifically, with <span class="math inline">\(X =1\)</span> if the cell is malignant and <span class="math inline">\(X = 0\)</span> if the cell is benign:</li>
+</ol>
+<p><span class="math display">\[P(X = x)= 0.4^x 0.6^{1-x}.\]</span></p>
+<p>Suppose that the radius of the cell in microns, <span class="math inline">\(Y\)</span>, depends on <span class="math inline">\(X\)</span> and can be well-modeled with the following conditional pdf:</p>
+<p><span class="math display">\[ f(y|x) = \frac{1}{\sqrt{2\pi (3.2+7.1x)}}e^{-\frac{1}{2}\frac{(y- (12 +5x))^2}{3.2+7.1x}}; -\infty &lt; y &lt; \infty
+\]</span></p>
+<ol style="list-style-type: upper-alpha">
+<li><p>Find <span class="math inline">\(\mu_Y = E(Y)\)</span>.</p></li>
+<li><p>Find <span class="math inline">\(\sigma^2_Y = Var(Y)\)</span>.</p></li>
+<li><p>The data set BreastCancerSample.csv contains data on 569 cells. Plot bar graphs of <span class="math inline">\(X\)</span>, and histograms of <span class="math inline">\(Y\)</span> for each <span class="math inline">\(X\)</span>. Does the proposed model appear reasonable?</p></li>
+<li><p>Find <span class="math inline">\(\hat\mu_Y = \hat E(Y)\)</span> and <span class="math inline">\(\hat\sigma^2_Y = \widehat{Var}(Y)\)</span>, the empirical (i.e., observed) mean and variance of the cell radii. Verify that they well-approximate the theoretical quantitities.</p></li>
+<li><p>Now use the data to fill out the following table:</p></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>x</th>
+<th><span class="math inline">\(\hat p(x)\)</span></th>
+<th><span class="math inline">\(\hat E(Y\mid X)\)</span></th>
+<th><span class="math inline">\(\widehat{Var}(Y\mid X)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Use the quantities in this table to find <span class="math inline">\(\hat \mu_Y\)</span> and <span class="math inline">\(\hat\sigma^2_Y\)</span>. Verify that they match your answers to part D.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>As discussed in class, if <span class="math inline">\((X,Y)\)</span> follow a bivariate normal distribution then:</li>
+</ol>
+<p><span class="math display">\[ E(Y|X) = \mu_Y + \rho \frac{\sigma_Y}{\sigma_X} (X-\mu_X)\]</span></p>
+<p><span class="math display">\[Var(Y|X) = \sigma^2_Y( 1-\rho^2)\]</span></p>
+<p>This implies that under bivariate normality, the conditional mean of <span class="math inline">\(Y\)</span> given <span class="math inline">\(X\)</span> is linear, and the form of the intercept and slope defining the linear relationship are explicitly determined by the means, variances, and correlation that parameterize the bivariate normal. In this problem we study this further.</p>
+<p>Consider the following combinations of parameterizations, for <span class="math inline">\(\mu_Y = \mu_X = 10\)</span> and <span class="math inline">\(\sigma_X = 2\)</span>:</p>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(\rho\)</span></th>
+<th><span class="math inline">\(\sigma_Y/\sigma_X\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.1</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>0.5</td>
+<td>0.5</td>
+</tr>
+<tr class="odd">
+<td>0.8</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>0.1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>0.5</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>0.8</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>0.1</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>0.5</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>0.8</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Using the function <code>mvrnorm()</code> from the <code>MASS</code> package, simulate 100 <span class="math inline">\((X,Y)\)</span> pairs for each row of the table above.</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>Plot the 9 data sets, including the best-fit linear regression line (use <code>geom_smooth(method='lm')</code> if using <code>ggplot</code>).</p></li>
+<li><p>By describing the scatterplots, briefly explain how the combinations of <span class="math inline">\(\rho\)</span> and <span class="math inline">\(\sigma_Y/\sigma_X\)</span> affect <span class="math inline">\(\widehat{Var}(Y|X)\)</span>.</p></li>
+<li><p>Fill out the table below, indicating the theoretical quantities of the regression coefficients, as well as the estimated coefficients from using <code>lm()</code> on each of the 9 simulated data sets.</p></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(\rho\)</span></th>
+<th><span class="math inline">\(\sigma_Y/\sigma_X\)</span></th>
+<th><span class="math inline">\(\beta_0\)</span></th>
+<th><span class="math inline">\(\beta_1\)</span></th>
+<th><span class="math inline">\(\hat\beta_0\)</span></th>
+<th><span class="math inline">\(\hat\beta_1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.1</td>
+<td>0.5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>0.5</td>
+<td>0.5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0.8</td>
+<td>0.5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>0.1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0.5</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>0.8</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0.1</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>0.5</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0.8</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+---
+title: "R Homework 3"
+author: 'Stat 450: Fall 2017'
+output:
+  pdf_document: default
+  word_document: default
+---
+
+**Due Wednesday, 11/8 by 11:59pm.  Prepare your submission with R Markdown.  Submit fully-knitted Word doc or pdf to D2L by due date.  You are encouraged to use this .Rmd file as your starting point for your submission.**
+
+1.  In Math-Stat, all of the pmfs/pdfs we have discussed are truly *models*.  This means they are proposed mathematical frameworks for explaining behavior of actual data.  We consier one proposed model for some actual data in this problem.  Suppose the type of breast cancer cells (malignant or benign) follow a Bernoulli distribution.  Specifically, with $X =1$ if the cell is malignant and $X = 0$ if the cell is benign:
+
+$$P(X = x)= 0.4^x 0.6^{1-x}.$$
+
+
+
+Suppose that the radius of the cell in microns, $Y$, depends on $X$ and can be well-modeled with the following conditional pdf:
+
+$$ f(y|x) = \frac{1}{\sqrt{2\pi (3.2+7.1x)}}e^{-\frac{1}{2}\frac{(y- (12 +5x))^2}{3.2+7.1x}}; -\infty < y < \infty
+$$
+
+
+A.  Find $\mu_Y = E(Y)$.
+
+B.  Find $\sigma^2_Y = Var(Y)$.
+
+C.  The data set BreastCancerSample.csv contains data on 569 cells.  Plot bar graphs of $X$, and histograms of $Y$ for each $X$.  Does the proposed model appear reasonable?  
+
+
+D.  Find $\hat\mu_Y = \hat E(Y)$ and $\hat\sigma^2_Y = \widehat{Var}(Y)$, the empirical (i.e., observed) mean and variance of the cell radii.  Verify that they well-approximate the theoretical quantitities.  
+
+
+E.  Now use the data to fill out the following table:
+
+x   |  $\hat p(x)$  |  $\hat E(Y\mid X)$ |  $\widehat{Var}(Y\mid X)$
+--- | ------------- | -------------      | ---------------------
+0   |               |                    |     
+1   |               |                    |     
+
+
+Use the quantities in this table to find $\hat \mu_Y$ and $\hat\sigma^2_Y$.  Verify that they match your answers to part D.  
+
+
+
+2.  As discussed in class, if $(X,Y)$ follow a bivariate normal distribution then:
+
+$$ E(Y|X) = \mu_Y + \rho \frac{\sigma_Y}{\sigma_X} (X-\mu_X)$$
+
+$$Var(Y|X) = \sigma^2_Y( 1-\rho^2)$$
+
+This implies that under bivariate normality, the conditional mean of $Y$ given $X$ is linear, and the form of the  intercept and slope defining the linear relationship are explicitly determined by the means, variances, and correlation that parameterize the bivariate normal.  In this problem we study this further.
+
+Consider the following combinations of parameterizations, for $\mu_Y = \mu_X = 10$ and $\sigma_X = 2$:
+
+
+$\rho$   |   $\sigma_Y/\sigma_X$
+-------- | ---------------------
+  0.1    |     0.5
+  0.5    |     0.5
+  0.8    |     0.5
+  0.1    |     1
+  0.5    |     1
+  0.8    |     1
+  0.1    |     2
+  0.5    |     2
+  0.8    |     2
+  
+
+Using the function `mvrnorm()` from the `MASS` package, simulate 100 $(X,Y)$ pairs for each row of the table above.  
+
+A.  Plot the 9 data sets, including the best-fit linear regression line (use `geom_smooth(method='lm')` if using `ggplot`).
+
+B.  By describing the scatterplots, briefly explain how the combinations of $\rho$ and $\sigma_Y/\sigma_X$ affect $\widehat{Var}(Y|X)$.  
+
+C.  Fill out the table below, indicating the theoretical quantities of the regression coefficients, as well as the estimated coefficients from using `lm()` on each of the 9 simulated data sets.
+
+$\rho$   |   $\sigma_Y/\sigma_X$  | $\beta_0$  | $\beta_1$| $\hat\beta_0$  | $\hat\beta_1$
+-------- | --------------------- | ----------- | -------  | ------------   | -------------
+  0.1    |     0.5     |  |  |  |  |  
+  0.5    |     0.5  |  |  |  |  |  
+  0.8    |     0.5  |  |  |  |  |  
+  0.1    |     1  |  |  |  |  |  
+  0.5    |     1  |  |  |  |  |  
+  0.8    |     1  |  |  |  |  |  
+  0.1    |     2  |  |  |  |  |  
+  0.5    |     2  |  |  |  |  |  
+  0.8    |     2  |  |  |  |  |  
+
+  
+
+
+

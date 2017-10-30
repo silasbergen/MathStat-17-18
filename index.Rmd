@@ -55,6 +55,7 @@ For Monday, 10/30, the following from Chapter 5 (each bullet represents one pres
 
 * [R Homework 1](R_HW1.html) | [.Rmd](https://www.dropbox.com/s/4zsa47cr0031429/R_HW1.Rmd?dl=0)
 * [R Homework 2](R_HW2.html) | [.Rmd](https://www.dropbox.com/s/8angsdzqcetqbc6/R_HW2.Rmd?dl=0)
+* [R Homework 3](https://www.dropbox.com/s/oyc9p4ixiw5o31c/R_HW3.pdf?dl=0) | [.Rmd](https://www.dropbox.com/s/mpxrssfn93e38u8/R_HW3.Rmd?dl=0) | [Breast cancer data](https://www.dropbox.com/s/b1k99n05s22njvi/BreastCancerSample.csv?dl=0)
 
 
 The following problems from the textbook are due Friday, 10/13. Hand in solutions at beginning of class.  All of the following are from Chapter 4:
