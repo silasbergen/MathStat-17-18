@@ -38,6 +38,7 @@ This [writing rubric](https://www.dropbox.com/s/0n0vheg0ucg1tln/Writing%20Rubric
 
 ### Presentations
 
+<!--
 For Monday, 10/30, the following from Chapter 5 (each bullet represents one presentation's worth):
 
 * 77, 92
@@ -45,7 +46,7 @@ For Monday, 10/30, the following from Chapter 5 (each bullet represents one pres
 * 95, 114
 * 136, 141
 
-<!--
+
 * 7, 25, 51
 * 9, 27, 53
 * 11, 29, 55
@@ -59,11 +60,23 @@ For Monday, 10/30, the following from Chapter 5 (each bullet represents one pres
 * [R Homework 3](https://www.dropbox.com/s/oyc9p4ixiw5o31c/R_HW3.pdf?dl=0) | [.Rmd](https://www.dropbox.com/s/mpxrssfn93e38u8/R_HW3.Rmd?dl=0) | [Breast cancer data](https://www.dropbox.com/s/b1k99n05s22njvi/BreastCancerSample.csv?dl=0)
 
 
-The following problems from the textbook are due Friday, 10/13. Hand in solutions at beginning of class.  All of the following are from Chapter 4:
+The following problems from the textbook are due Monday, 11/20. Hand in solutions at beginning of class.  All of the following are from Chapter 5:
 
+
+* 14, 15, 17
+* 32, 39, 42
+* 69, 71
+* 86
+* 99, 100
+* 108, 110, 111
+* 142
+* 152, 154, 156, 157, 160
+
+<!--
 * 6, 15
 * 23, 34, 35
 * 42
 * 80
 * 89, 96 (use R on part d.), 111, 112
 * 160, 165, 167, 173, 185, 188, 190, 197, 198, 200
+-->
