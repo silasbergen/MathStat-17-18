@@ -38,9 +38,9 @@ This [writing rubric](https://www.dropbox.com/s/0n0vheg0ucg1tln/Writing%20Rubric
 
 ### Presentations
 
-<!--
-For Monday, 10/30, the following from Chapter 5 (each bullet represents one presentation's worth):
 
+For Friday, 12/1, the following from Chapter 6.  I will randomly assign one of the following problems to each student.
+<!--
 * 77, 92
 * 79, 93
 * 95, 114
@@ -53,6 +53,8 @@ For Monday, 10/30, the following from Chapter 5 (each bullet represents one pres
 * 14, 32, 58
 -->
 
+* 10, 14, 34, 37, 46, 74, 80, 81.
+
 ### Homework
 
 * [R Homework 1](R_HW1.html) | [.Rmd](https://www.dropbox.com/s/4zsa47cr0031429/R_HW1.Rmd?dl=0)
@@ -60,17 +62,15 @@ For Monday, 10/30, the following from Chapter 5 (each bullet represents one pres
 * [R Homework 3](https://www.dropbox.com/s/oyc9p4ixiw5o31c/R_HW3.pdf?dl=0) | [.Rmd](https://www.dropbox.com/s/mpxrssfn93e38u8/R_HW3.Rmd?dl=0) | [Breast cancer data](https://www.dropbox.com/s/b1k99n05s22njvi/BreastCancerSample.csv?dl=0)
 
 
-The following problems from the textbook are due Monday, 11/20. Hand in solutions at beginning of class.  All of the following are from Chapter 5:
+The following problems from the textbook are due Friday, 12/1. Hand in solutions at beginning of class.  All of the following are from Chapter 6:
 
 
-* 14, 15, 17
-* 32, 39, 42
-* 69, 71
-* 86
-* 99, 100
-* 108, 110, 111
-* 142
-* 152, 154, 156, 157, 160
+* 2, 8, 15, 20,  
+* 26, 31
+* 48, 50, 57, 58
+* 65, 68, 71
+* 76, 77, 78, 79
+* 92, 94, 95, 103, 111, 114
 
 <!--
 * 6, 15
