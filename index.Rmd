@@ -35,6 +35,7 @@ This [writing rubric](https://www.dropbox.com/s/0n0vheg0ucg1tln/Writing%20Rubric
 
 * [Practice midterm](https://www.dropbox.com/s/sov203yn8i9p6yj/MathStatI-Midterm-Fall2016.docx?dl=0)
 * Take-home midterm (due 10/25) | [Word doc](https://www.dropbox.com/s/tcap7bhtf6tfhn7/Stat450-TakeHomeMidterm-Fall2017.docx?dl=0) | [Source file](https://www.dropbox.com/s/lmp8syvoo0xvnzc/Stat450-TakeHomeMidterm-Fall2017.Rmd?dl=0)
+* Take-home final (due 12/8) | [pdf](https://www.dropbox.com/s/ilalv552wp65ili/Stat450-TakehomeFinal-F17.pdf?dl=0) | [Source file](https://www.dropbox.com/s/o0uohzn1k5arnuy/Stat450-TakehomeFinal-F17.Rmd?dl=0)
 
 ### Presentations
 
